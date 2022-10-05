@@ -1,0 +1,42 @@
+
+                                * * * * *  Naming Conventions * * * * *
+
+------------------------------------------------------------------------------------------------------------------------
+This project is going to have tens of packages since this is a practice project.
+So, I want to sort them in daily order
+That is why I am not going to follow Naming Conventions only for packages
+    --> I will use this formation = day"dayNumber"_TopicInCamelCase
+------------------------------------------------------------------------------------------------------------------------
+
+
+Packages:   1.Names should be in lowercase.
+            2.With small projects that only have a few packages it's okay to just give them simple (but meaningful!) names:
+                package pokeranalyzer package mycalculator
+            3.In software companies and large projects where the packages might be imported into other classes,
+                the names will normally be subdivided. Typically this will start with the company domain before being split
+                into layers or features:
+                package com.mycompany.utilities package org.bobscompany.application.userinterface
+
+Classes:    1.Names should be in CamelCase.
+            2.Try to use nouns because a class is normally representing something in the real world:
+                class Customer - class Account
+
+Interfaces: 1.Names should be in CamelCase.
+            2.They tend to have a name that describes an operation that a class can do:
+                interface Comparable - interface Enumerable
+            3.Note that some programmers like to distinguish interfaces by beginning the name with an "I":
+                interface IComparable interface IEnumerable
+
+Methods:    1.Names should be in mixed case. Use verbs to describe what the method does:
+            2.Starts with lowercase
+                void calculateTax() string getSurname()
+
+Variables:  1.Names should be in mixed case.
+            2.Starts with lowercase
+            3.The names should represent what the value of the variable represents:
+                string firstName int orderNumber
+            4.Only use very short names when the variables are short-lived, such as in for loops:
+                for (int i=0; i<20;i++) {   //i only lives in here }
+
+Constants:  1.Names should be in uppercase.
+                static final int DEFAULT_WIDTH static final int MAX_HEIGHT
